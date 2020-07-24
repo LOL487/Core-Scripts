@@ -141,6 +141,7 @@ local function GetFilteredGameName(gameName, creatorName)
 		if tempUsername then
 			local newGameName = string.gsub(gameName, tempUsername, creatorName, 1)
 			if newGameName then
+				print("Filterd")
 				return newGameName
 			end
 		end
